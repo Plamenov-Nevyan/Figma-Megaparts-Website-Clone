@@ -2,7 +2,7 @@
     min-width: 100%;
 }
 
-/* Top part of the header */
+                        /* Top part of the header */
 
 .header-top {
     display: flex;
@@ -95,4 +95,89 @@
     font-weight: bold;
 }
 
-/* Bottom part of the header */
+                        /* Bottom part of the header */
+/* Left Navigation */
+
+.header-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1C2D3A;
+    align-items: center;
+}
+
+.header-bottom .header-bottom-nav-left, .header-bottom .header-bottom-nav-right {
+    padding: 1em;
+}
+
+.header-bottom-nav-left .nav-left-links {
+    display: flex;
+    list-style-type: none;
+    gap: .4em;
+}
+
+.header-bottom-nav-left .nav-left-links li{
+    display: flex;
+    border-radius: 5em;
+    padding: 0.2em 0.5em;
+    align-items: center;
+}
+
+.header-bottom-nav-left .nav-left-links li:first-child {
+    background-color: #008AEE;
+}
+
+.header-bottom-nav-left .nav-left-links li:nth-child(2){
+    background-color: #F2992F;
+}
+
+.header-bottom-nav-left .nav-left-links li:nth-child(3){
+    background-color: #2CCACA;
+}
+
+.header-bottom-nav-left .nav-left-links li:nth-child(4){
+    background-color: #33BB5A;
+}
+
+.header-bottom-nav-left .nav-left-links li:nth-child(5){
+    background-color: #BD5FE9;
+}
+
+.header-bottom-nav-left .nav-left-links li:last-child{
+    background-color: #EE4700;
+}
+
+.header-bottom-nav-left .nav-left-links a  {
+    text-transform: uppercase;
+    color: white;
+}
+
+ /* Right navigation */
+
+.header-bottom-nav-right {
+    
+}
+
+
+.header-bottom-nav-right .nav-right-links {
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+    align-items: center;
+}
+
+.header-bottom-nav-right .nav-right-links li {
+    
+}
+
+.header-bottom-nav-right .nav-right-links  li:first-child {
+    background-color: #F5A636;
+    border-radius: 4em;
+    padding: 0.6em 0.6em;
+}
+
+.header-bottom-nav-left .nav-left-links a svg,  
+.header-bottom-nav-right .nav-right-links a svg{
+    width: 1em;
+    height: 1em;
+    fill: white;
+}
