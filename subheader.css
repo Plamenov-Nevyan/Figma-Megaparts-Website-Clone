@@ -1,0 +1,47 @@
+.subheader {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+}
+                        /* Send Asking Article */
+
+.subheader .send-asking-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.send-asking-article .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.send-asking-article .text-container h1 {
+    font-weight: 700;
+}
+
+.send-asking-article .text-container p {
+    font-weight: 200;
+}
+
+.send-asking-article .text-container p span {
+    color: #33BB5A;
+}
+
+.send-asking-article .send-asking-btn {
+    padding: 0.4em 2em;
+    border-radius: 5em;
+    border: none;
+    color: white;
+    background: #33BB5A;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.send-asking-article .send-asking-btn svg {
+    width: 1em;
+    height: 1em;
+    fill: white;
+}
