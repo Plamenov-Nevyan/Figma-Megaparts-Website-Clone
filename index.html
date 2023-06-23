@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./layout.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./subheader.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./aside.css">
     <title>Megaparts-Copy-Website</title>
 </head>
 <body>
@@ -159,17 +161,90 @@
             <aside class="aside-add">
 
             </aside>
+
             <section class="publications-list-options">
                 <div class="options-left">
-
+                    <select id="publications-date-select" name="publications-date-select">
+                        <option value="newest" selected>Най-нови</option>
+                    </select>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg>
+                        <span>Обнови списъка с обяви</span>
+                    </p>
                 </div>
                 <div class="options-right">
-
+                    <p class="option-p">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 64C32 28.7 60.7 0 96 0H256c35.3 0 64 28.7 64 64V256h8c48.6 0 88 39.4 88 88v32c0 13.3 10.7 24 24 24s24-10.7 24-24V222c-27.6-7.1-48-32.2-48-62V96L384 64c-8.8-8.8-8.8-23.2 0-32s23.2-8.8 32 0l77.3 77.3c12 12 18.7 28.3 18.7 45.3V168v24 32V376c0 39.8-32.2 72-72 72s-72-32.2-72-72V344c0-22.1-17.9-40-40-40h-8V448c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32V64zM96 80v96c0 8.8 7.2 16 16 16H240c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16H112c-8.8 0-16 7.2-16 16z"/></svg>
+                        <span>120</span>
+                    </p>
+                    <p class="options-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M80 96c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32l96 0c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32h16c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64l16 0zm304 96c0-8.8-7.2-16-16-16s-16 7.2-16 16v32H320c-8.8 0-16 7.2-16 16s7.2 16 16 16h32v32c0 8.8 7.2 16 16 16s16-7.2 16-16V256h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H384V192zM80 240c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H96c-8.8 0-16 7.2-16 16z"/></svg>
+                        <span>10</span>
+                    </p>
+                    <p class="options-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M352 320c88.4 0 160-71.6 160-160c0-15.3-2.2-30.1-6.2-44.2c-3.1-10.8-16.4-13.2-24.3-5.3l-76.8 76.8c-3 3-7.1 4.7-11.3 4.7H336c-8.8 0-16-7.2-16-16V118.6c0-4.2 1.7-8.3 4.7-11.3l76.8-76.8c7.9-7.9 5.4-21.2-5.3-24.3C382.1 2.2 367.3 0 352 0C263.6 0 192 71.6 192 160c0 19.1 3.4 37.5 9.5 54.5L19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L297.5 310.5c17 6.2 35.4 9.5 54.5 9.5zM80 408a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                        <span>123</span>
+                    </p>
                 </div>
             </section>
-            <section class="publications-list">
 
+            <section class="publications-list">
+                <div class="card">
+                    <div class="publication-images">
+                        <div class="images-left">
+                            <img src="./Images/car-part.jpg" />
+                        </div>
+                        <div class="images-right">
+                            <div class="top-img">
+                                <img src="./Images/car-part.jpg" />
+                            </div>
+                            <div class="bottom-img">
+                                <img src="./Images/car-part.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publication-owner">
+                        <div class="text-left">
+                            <span>М</span>
+                            <span>Мартин, Шумен</span>
+                        </div>
+                        <div class="text-right">
+                            <span>Валидност:</span>
+                            <span>48:18:16</span>
+                        </div>
+                    </div>
+                    <div class="publication-description">
+                        <span>Купувам</span>
+                        <h5>
+                            Полуоска за Mercedez-Benz A-Class Hatchback(W168)(07.1997 - 08.2004) A 140 (168.031, 168.131), 82 к. с... 
+                            позиция: предна, дясна
+                        </h5>
+                        <div class="publication-details">
+                            <p>Получени оферт: <span>9</span></p>
+                            <p>Коментар: <span>Няма допълнителна информация</span></p>
+                        </div>
+                        <div class="line-divider">
+
+                        </div>
+                        <div class="publication-specs">
+                            <div class="specs-left">
+                                <p>Кубатура: <span>1.4</span></p>
+                                <p>Скоростна кутия: <span>Ръчни скорости</span></p>
+                            </div>
+                            <div class="specs-right">
+                                <p>Позиция: <span>Предна, дясна</span></p>
+                                <p>Конски сили <span>82</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publication-action-btns">
+                        <button id="send-offer">Изпрати оферта</button>
+                        <button id="add-in-notebook">В бележника</button>
+                        <button id="reviewed">Прегледано</button>
+                    </div>
+                </div>
             </section>
+
         </main>
     </div>     
 </body>

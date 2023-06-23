@@ -1,8 +1,24 @@
+.main-content-wrapper {
+    padding: 0 3rem;
+   }
+
 .site-header {
     display: flex;
     flex-direction: column;
 }
 
-.main-content-wrapper {
- padding: 0 3rem;
+.subheader {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    gap: 2em;
+}
+
+.site-main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+     'aside publications-list-options'
+     'aside publications-list '
+    ;
 }

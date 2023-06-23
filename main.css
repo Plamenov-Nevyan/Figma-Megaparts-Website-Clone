@@ -1,0 +1,170 @@
+                        /* Publication list options */
+
+/* Options - left */
+.publications-list-options {
+    display: flex;
+    justify-content: space-around;
+    grid-area: publications-list-options;
+}
+
+.publications-list-options .options-left {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.options-left select {
+    padding: 0.3em 0;
+    border-radius: 4em;
+    flex: 1 1 40%;
+}
+
+.options-left p {
+    color: #30A0F1;
+    text-decoration: underline;
+}
+
+.options-left p svg {
+    width: 1em;
+    fill: #30A0F1 ;
+}
+
+/* Options-right */
+
+.publications-list-options .options-right {
+    display: flex;
+    gap: 1em;
+}
+
+.options-right p {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+}
+
+.options-right p svg {
+    width: 1em;
+}
+
+.options-right p span {
+    color: #2098F0;
+    font-weight: bold;
+}
+
+                        /* Publications section */
+
+/* Section layout */
+
+.publications-list {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: publications-list;
+}
+
+
+/* Publication card */
+
+/* 1. Images styling  */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    flex: 0 1 20%;
+}
+
+.card .publication-images {
+    min-height: 10em;
+    display: flex;
+    align-items: center;
+}
+
+.publication-images .images-left {
+    flex: 1 1 79%;
+}
+
+.images-left img {
+    width: 100%;
+    height: auto;
+}
+
+.publication-images .images-right {
+    flex: 1 1 40%;
+}
+
+.images-right .top-img img, .images-right .bottom-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* 2. Text styling */
+
+.card .publication-owner {
+    display: flex;
+    gap: 1em;
+}
+
+.publication-owner .text-left span {
+    font-size: 1rem;
+}
+
+.publication-owner .text-right span {
+    font-size: 1rem;
+}
+
+.card .publication-description h5 {
+    font-size: clamp(0.7rem, 0.7vw, 1.4rem);
+}
+
+.publication-description .publication-details p {
+    font-size: .6rem;
+}
+
+.publication-description .publication-details p span {
+    font-size: .6rem;
+}
+
+.publication-description .line-divider {
+    width: 100%;
+    height: 0.2em;
+    background: #E8E8E8;
+}
+
+.publication-description .publication-specs {
+    width: 100%;
+    height: 0.2em;
+    background: #E8E8E8;
+}
+
+.publication-specs .specs-left p {
+    font-size: .6rem;
+}
+
+.publication-specs .specs-left p span {
+    font-size: .6rem;
+}
+
+.publication-specs .specs-right p {
+    font-size: .6rem;
+}
+
+.publication-specs .specs-right p span {
+    font-size: .6rem;
+}
+
+.card .publication-action-btns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.publication-action-btns #send-offer {
+    flex: 1 1 100%;
+}
+
+.publication-action-btns #add-in-notebook {
+    flex: 1 1 50%;
+}
+
+.publication-action-btns #reviewed {
+    flex: 1 1 47%;
+}
