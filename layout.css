@@ -16,7 +16,7 @@
 
 .site-main {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 23% 77%;
     grid-template-areas: 
      'aside publications-list-options'
      'aside publications-list '
