@@ -38,10 +38,79 @@
     display: flex;
     align-items: center;
     gap: 0.3em;
+    cursor: pointer;
 }
 
 .send-asking-article .send-asking-btn svg {
     width: 1em;
     height: 1em;
     fill: white;
+}
+
+                        /* Filter Article */
+
+/* Text */
+.subheader .filter-article {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.filter-article .filter-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.filter-text-container .clean-filters-p {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    color: #2098F0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.filter-text-container .clean-filters-p svg {
+    width: 0.8em;
+    fill: #2098F0;
+}
+
+/* Inputs */
+
+.subheader .filter-article .inputs-and-btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.inputs-and-btn-container select{
+    flex: 1 1 28%;
+    padding: .6em 1.3em;
+    border-radius: 5em;
+    cursor: pointer;
+}
+.inputs-and-btn-container button {
+    flex: 1 1 30%;
+    border-radius: 5em;
+    padding: .6em;
+    cursor: pointer;
+}
+
+.inputs-and-btn-container #brand, 
+.inputs-and-btn-container #category, 
+.inputs-and-btn-container #place-of-living {
+    border: 2px solid #2098F0;
+}
+
+.inputs-and-btn-container #model, 
+.inputs-and-btn-container #sub-category{
+    opacity: 0.3;
+}
+
+.inputs-and-btn-container button {
+    border: none;
+    background-color: #2098F0;
+    color: white;
 }

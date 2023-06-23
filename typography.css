@@ -22,8 +22,8 @@ a {
     text-decoration: none;
 }
 
-p, span, table, button, a {
-    font-size: clamp(1rem, 2.2vw, 2rem);
+p, span, table, button, a, input, select {
+    font-size: clamp(1rem, 1.3vw, 1.6rem);
 }
 
 h6 {
