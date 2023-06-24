@@ -28,3 +28,10 @@
     flex-direction: column;
     padding: 0 2em;
 }
+
+@media (width < 390px) {
+    .site-main {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -118,3 +118,24 @@
     background-color: #2098F0;
     color: white;
 }
+
+
+@media (width < 540px) {
+    .send-asking-article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .send-asking-article .text-container h1, .send-asking-article .text-container p {
+        text-align: center;
+    }
+}
+
+@media (width < 390px) {
+    .send-asking-article {
+        flex-direction: column-reverse;
+    }
+    .send-asking-article .text-container h1 {
+        display: none;
+    }
+}

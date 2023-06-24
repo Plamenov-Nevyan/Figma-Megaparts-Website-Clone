@@ -22,7 +22,11 @@ a {
     text-decoration: none;
 }
 
-p, span, table, button, a, input, select {
+p,  span {
+    font-size: clamp(1.6rem, 1.3vw, 1.6rem);
+}
+
+table, button, a, input, select {
     font-size: clamp(1rem, 1.3vw, 1.6rem);
 }
 

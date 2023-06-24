@@ -167,3 +167,31 @@
     text-align: center;
     cursor: pointer;
 }
+
+@media (width < 390px) {
+    .aside-nav-container .buttons-section {
+        align-items: center;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .aside-nav-container .aside-nav-items {
+        display: none;
+    }
+
+    .aside-nav-container .line-divider:nth-child(2) {
+        display: none;
+    }
+
+    .aside-nav-container #FAQ-button {
+        display: none;
+    }
+
+    .aside-add .add-wrapper {
+        display: none;
+    }
+
+    .aside-add {
+        gap: 0;
+    }
+}
