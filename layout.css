@@ -22,3 +22,9 @@
      'aside publications-list '
     ;
 }
+
+.aside-add {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+}
