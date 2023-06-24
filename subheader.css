@@ -107,6 +107,12 @@
     opacity: 0.3;
 }
 
+.inputs-and-btn-container #model:focus, 
+.inputs-and-btn-container #sub-category:focus{
+    opacity: 1;
+    border: 2px solid #2098F0;
+}
+
 .inputs-and-btn-container button {
     border: none;
     background-color: #2098F0;
