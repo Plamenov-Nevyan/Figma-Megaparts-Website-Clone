@@ -42,6 +42,10 @@
     color: white;
 }
 
+.site-header input[type="checkbox"] {
+    display: none;
+}
+
 .header-top .contacts-nav {
     flex: 0 1 32%;
 }
@@ -60,11 +64,10 @@
 .header-top .contacts-nav .contacts-nav-links li:first-child {
     background: #008AEE;
     border-radius: 50%;
-    max-height: 2em;
+    max-height: 0.8em;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
 }
 
 .header-top .contacts-nav .contacts-nav-links  li a {
@@ -94,6 +97,23 @@
     fill: darkgreen;
     font-weight: bold;
 }
+
+.site-header .hamburger-btn {
+    display: none;
+    align-items: center;
+    gap: 0.4em;
+    padding: 1em;
+    fill: white;
+   }   
+
+.hamburger-btn svg {
+    width: 2em;
+    fill: white;
+}
+
+.site-header .hamburger-btn:hover {
+       cursor: pointer;
+   }
 
                         /* Bottom part of the header */
 /* Left Navigation */
@@ -165,9 +185,7 @@
     align-items: center;
 }
 
-.header-bottom-nav-right .nav-right-links li {
-    
-}
+
 
 .header-bottom-nav-right .nav-right-links  li:first-child {
     background-color: #F5A636;
@@ -181,3 +199,5 @@
     height: 1em;
     fill: white;
 }
+
+
