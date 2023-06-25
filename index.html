@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./typography.css">
-    <link rel="stylesheet" href="./layout.css">
-    <link rel="stylesheet" href="./header.css">
-    <link rel="stylesheet" href="./subheader.css">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./aside.css">
-    <link rel="stylesheet" href="./header-media-queries.css" >
+    <link rel="stylesheet" href="./styles/typography.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/subheader.css">
+    <link rel="stylesheet" href="./styles/aside.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/pagination.css">
+    <link rel="stylesheet" href="./media-queries/header-media-queries.css">
+    <link rel="stylesheet" href="./media-queries/layout-media-queries.css">
+    <link rel="stylesheet" href="./media-queries/subheader-media-queries.css">  
+    <link rel="stylesheet" href="./media-queries/aside-media-queries.css">
+    <link rel="stylesheet" href="./media-queries/main-media-queries.css">
+    <link rel="stylesheet" href="./media-queries/pagination-media-queries.css">
     <title>Megaparts-Copy-Website</title>
 </head>
 <body>
@@ -133,6 +139,7 @@
                     Направи запитване
                 </button>
             </article>
+            <input type="checkbox" id="hide-open-filters" />
             <article class="filter-article">
                 <div class="filter-text-container">
                     <h2>Филтри</h2>
@@ -168,6 +175,9 @@
                     <section class="buttons-section">
                         <button id="orders">Поръчки</button>
                         <button id="owned-askings">Моите запитвания</button>
+                        <label for="hide-open-filters">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                        </label>
                     </section>
                     <div class="line-divider">
 
@@ -659,6 +669,36 @@
             </section>
 
         </main>
+        <section class="pagination-section">
+            <div class="desktop">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                </a>
+                <span>стр.</span>
+                <select>
+                    <option value="1" selected>1</option>
+                </select>
+                <span>от 2</span>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                </a>
+            </div>
+            <div class="mobile">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                </a>
+                <ul>
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li>...</li>
+                    <li><a href="">6</a></li>
+                </ul>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                </a>
+            </div>
+        </section>
     </div>     
 </body>
 </html>

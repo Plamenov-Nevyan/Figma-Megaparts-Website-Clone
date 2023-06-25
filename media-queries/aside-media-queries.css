@@ -1,0 +1,34 @@
+@media(width < 660px) {
+    .aside-nav-container .aside-nav-items {
+        display: none;
+    }
+
+    .aside-nav-container .line-divider:nth-child(2) {
+        display: none;
+    }
+
+    .aside-nav-container #FAQ-button {
+        display: none;
+    }
+
+    .aside-add .add-wrapper {
+        display: none;
+    }
+}
+
+@media (width < 390px) {
+    .aside-nav-container .buttons-section {
+        align-items: center;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .aside-add {
+        gap: 0;
+        margin-bottom: 1em;
+    }
+
+    .buttons-section label {
+        display: initial;
+    }
+}

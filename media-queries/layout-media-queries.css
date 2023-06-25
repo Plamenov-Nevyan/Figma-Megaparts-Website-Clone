@@ -1,0 +1,23 @@
+@media (min-width: 760px) and (max-width: 1000px) {
+    .site-main {
+        column-gap: 1em;
+        place-content: center;
+        padding: 3em;
+        grid-template-columns: initial;
+    }
+}
+
+@media (width < 660px) {
+    .site-main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (width < 390px) {
+    .site-main {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+    }
+}

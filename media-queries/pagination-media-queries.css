@@ -1,0 +1,9 @@
+@media (max-width: 390px) {
+    .pagination-section .mobile {
+        display: flex;
+    }
+
+    .pagination-section .desktop {
+        display: none;
+    }
+}
